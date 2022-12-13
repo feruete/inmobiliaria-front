@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto+Slab:100,300,400,700");
+@import url("https://fonts.googleapis.com/css?family=Raleway:300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i");
+
+* {
+  box-sizing: border-box;
+}
+
+.cardsContainer {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #eff3f4;
+  display: -webkit-flex;
+  -webkit-justify-content: center;
+  -webkit-align-items: center;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+}
+
+#card {
+  width: 17rem;
+  height: 20rem;
+  margin: 2rem;
+  -webkit-animation: shadow-drop-tb 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: shadow-drop-tb 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
+}
+
+@-webkit-keyframes shadow-drop-tb {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35),
+      0 12px 20px -12px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35),
+      0 12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
+@keyframes shadow-drop-tb {
+  0% {
+    -webkit-box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+  100% {
+    -webkit-box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35),
+      0 12px 20px -12px rgba(0, 0, 0, 0.35);
+    box-shadow: 0 -12px 20px -12px rgba(0, 0, 0, 0.35),
+      0 12px 20px -12px rgba(0, 0, 0, 0.35);
+  }
+}
+
+#card:hover {
+  transform: scale(1.1);
+  transition: 0.5s;
+}
+
+#card_category {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
+}
+
+#card__title {
+  font-weight: 500;
+}
+
+#cardMedia {
+  height: 12rem;
+}
+
+#cardMedia:hover {
+  width: 300px;
+  transition: 1s;
+}
+
+.button-operation {
+  background: #15d798;
+  border-radius: 1000px;
+  padding: 6px 12px;
+  color: #ffffff;
+  display: inline-block;
+  font: normal bold 26px/1 "Roboto", sans-serif;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-size: 12px;
+  position: absolute;
+  margin-left: 10.2rem;
+  margin-top: -12rem;
+  border: none;
+  box-shadow: 0 10px 20px -8px rgba(0, 0, 0, 0.7);
+  -webkit-animation: flip-horizontal-bottom 0.4s
+    cubic-bezier(0.455, 0.03, 0.515, 0.955) reverse backwards;
+  animation: flip-horizontal-bottom 0.4s cubic-bezier(0.455, 0.03, 0.515, 0.955)
+    reverse backwards;
+}
+
+@-webkit-keyframes flip-horizontal-bottom {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+  }
+}
+@keyframes flip-horizontal-bottom {
+  0% {
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+  }
+  100% {
+    -webkit-transform: rotateX(-180deg);
+    transform: rotateX(-180deg);
+  }
+}
+
+#venta {
+  background: #8b05ce;
+}
+
+#alquiler {
+  background: #05a91b;
+}
+
+#icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#icons img {
+  width: 20px;
+  margin-right: 5px;
+}
+
+#textIcons {
+  display: flex;
+  justify-content: space-evenly;
+  font-weight: 500;
+  color: #868686;
+}
+
+#card:hover #cardMedia--hover {
+  height: 100%;
+  opacity: 0.3;
+}
+
+.venta {
+  background: #8b05ce;
+}
+
+.alquiler {
+  background: #05a91b;
+}
+
+.card__img {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 235px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.card__info-hover {
+  position: absolute;
+  padding: 16px;
+  width: 100%;
+  opacity: 0;
+  top: 0;
+}
+
+.card__img--hover {
+  transition: 0.2s all ease-out;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  position: absolute;
+  height: 235px;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  top: 0;
+}
+.card {
+  margin-right: 25px;
+  transition: all 0.4s cubic-bezier(0.175, 0.885, 0, 1);
+  background-color: #fff;
+  width: 33.3%;
+  position: relative;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0px 13px 10px -7px rgba(0, 0, 0, 0.1);
+}
+.card:hover {
+  box-shadow: 0px 30px 18px -8px rgba(0, 0, 0, 0.1);
+  transform: scale(1.1, 1.1);
+}
+
+#card__title {
+  text-align: left;
+}
+
+.card__info {
+  z-index: 2;
+  background-color: #fff;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding: 16px 24px 24px 24px;
+}
+
+.card__category {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+  color: #868686;
+}
+
+.bed {
+  display: flex;
+  align-items: center;
+}
+
+.bath {
+  display: flex;
+  align-items: center;
+}
+
+.area {
+  display: flex;
+  align-items: center;
+}

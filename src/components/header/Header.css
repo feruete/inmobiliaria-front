@@ -1,0 +1,85 @@
+.mainHeader {
+  background-color: #beb6b6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 8rem;
+}
+.admButton:hover {
+  background-color: white;
+  color: #064166;
+  transition: all 0.7s;
+  padding: 0.4rem;
+  border-radius: 1rem;
+}
+.menuHamburguer {
+  display: none;
+}
+.main-title {
+  text-decoration: none;
+  font-size: 2rem;
+  padding-left: 5rem;
+  align-items: center;
+  color: #0074be;
+}
+.main-title:hover {
+  color: #064166;
+  transition: ease-in-out 0.5s;
+}
+.navbar-ul {
+  display: flex;
+  gap: 3rem;
+  padding: 2rem;
+  text-decoration: none;
+}
+
+.navbar li {
+  list-style-type: none;
+  text-decoration: none;
+  font-size: 1.3rem;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: #0074be;
+  transition: ease-in-out 0.5s;
+}
+.navbar a:hover {
+  color: #064166;
+}
+.brand-logo {
+  width: 15rem;
+}
+
+@media (max-width: 887px) {
+  .navbar-ul {
+    display: none;
+  }
+  .menuHamburguer {
+    display: block;
+  }
+
+  .mainHeader {
+    background-color: #beb6b6;
+    display: flex;
+    justify-content: space-between;
+
+    height: 8rem;
+  }
+  .main-title {
+    text-decoration: none;
+    font-size: 1rem;
+    padding-left: 1rem;
+    align-items: center;
+    color: #0074be;
+    width: 3rem;
+    display: flex;
+    text-align: center;
+  }
+  .brand-logo {
+    width: 6rem;
+  }
+  .menuHamburguer {
+    margin-right: 0.5rem;
+  }
+}

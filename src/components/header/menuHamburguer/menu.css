@@ -1,0 +1,15 @@
+.menuHamburguer {
+  background-color: #064166;
+  border-radius: 1rem;
+}
+
+.dropdownMenu {
+  background-color: #064166;
+  color: white;
+  font-weight: 900;
+}
+.dropdownMenu a {
+  text-decoration: none;
+  list-style-type: none;
+  color: white;
+}

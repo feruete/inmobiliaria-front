@@ -1,0 +1,106 @@
+.footer {
+  width: 100%;
+  background-color: #0a141d;
+}
+
+.footer .group-1 {
+  width: 100%;
+  max-width: 95rem;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1rem;
+  padding: 0rem 0rem;
+  text-align: center;
+  justify-content: center;
+}
+
+.footer .group-1 .box figure {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.logo2 {
+  width: 20rem;
+}
+.aboutUs {
+  color: white;
+}
+
+.footer .group-1 .box h2 {
+  color: white;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+}
+.footer .group-1 .box p {
+  color: #efefef;
+  margin-bottom: 0.8rem;
+}
+.social-media {
+  display: flex;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+}
+.footer .group-1 .social-media a {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  width: 3rem;
+  height: 3rem;
+  line-height: 3rem;
+  color: white;
+  margin-right: 1rem;
+  background-color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  border-radius: 1rem;
+}
+.footer .group-1 .social-media img {
+  width: 1.5rem;
+  color: white;
+}
+
+.footer .group-2 {
+  background-color: #0a1a2a;
+  padding: 0.5rem 0.8rem;
+  text-align: center;
+  color: #fff;
+}
+
+@media (max-width: 844px) {
+  .footer .group-1 {
+    width: auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-gap: 0.7rem;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+  }
+  .footer .group-1 .box figure {
+    width: auto;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .aboutUs1 {
+    text-align: center;
+    width: auto;
+
+    align-items: center;
+    justify-content: center;
+    color: white;
+  }
+  .box {
+    width: auto;
+  }
+  .logo2 {
+    width: 100%;
+  }
+}

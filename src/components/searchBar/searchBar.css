@@ -1,0 +1,59 @@
+.div {
+  margin-top: 1rem;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.selector {
+  background-color: rgb(255, 255, 255);
+  padding: 7px 12px;
+  box-sizing: border-box;
+  border: 1.5px solid transparent;
+  font-size: 16px;
+  border-radius: 3px;
+  transition: 0.2s ease-in;
+  margin: 0.5rem 0;
+  cursor: pointer;
+  width: 20%;
+}
+
+.selector:focus {
+  outline: none;
+  border-color: #4eb8dd;
+}
+
+.option {
+  font-size: 16px;
+  display: block;
+}
+
+#button {
+  margin: 0.5rem 0;
+}
+
+#buttonRefresh {
+  margin: 0.5rem 0;
+  color: #1976d2;
+}
+
+#button {
+  margin: 0.5rem 0;
+  background-color: ;
+}
+
+@media all and (min-width: 390px) and (max-width: 1024px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .selector {
+    width: 100%;
+    text-align: center;
+    margin: 0.3rem 0;
+  }
+}
